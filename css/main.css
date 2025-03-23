@@ -1,0 +1,65 @@
+.main h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.main h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  z-index: -1;
+  left: -40px;
+  top: -10px;
+}
+
+.main p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 1000px) {
+  .main h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    justify-items: center;
+  }
+  .main h1 {
+    font-size: 1.5rem;
+  }
+  .main p {
+    font-size: 0.875rem;
+  }
+  .main h1::before {
+    width: 20px;
+    height: 20px;
+    top: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .main img {
+    display: none;
+  }
+}

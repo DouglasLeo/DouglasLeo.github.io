@@ -1,0 +1,181 @@
+.formation {
+  background-color: #141414;
+  color: #ffffff;
+  position: relative;
+}
+
+.formation::after {
+  display: block;
+  content: "";
+  width: 130px;
+  height: 130px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -70px;
+  left: 150px;
+}
+
+.formation-container .subtitle {
+  color: #000000;
+  max-width: 4ch;
+}
+
+.formation-container-description {
+  color: #a3a3a3;
+  max-width: 40ch;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.formation-container-description strong {
+  color: #ffffff;
+}
+
+.formation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.formation-list li {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+.formation-list span {
+  line-height: 1.4;
+  color: #a3a3a3;
+}
+.formation-list-degree {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+}
+.formation-list-function {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  flex: 1;
+}
+
+.formation-list-college {
+  font-size: 1.125rem;
+  line-height: 1.1;
+}
+
+.formation-list li::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 50px;
+  left: -4px;
+}
+
+.formation-courses {
+  position: relative;
+}
+
+.courses {
+  margin-bottom: 60px;
+}
+
+.formation-courses-title {
+  color: #a3a3a3;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.formation-courses h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.courses h3::before {
+  background: url("../img/cursos.svg") no-repeat center center;
+  margin-bottom: 50px;
+}
+
+.languages h3::before {
+  background: url("../img/idiomas.svg") no-repeat center center;
+  margin-bottom: 50px;
+}
+
+.formation-courses-list li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.formation-courses-list span {
+  color: #a3a3a3;
+}
+
+.languages h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.languages li {
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+  line-height: 1.1;
+}
+
+.languages li span {
+  color: #a3a3a3;
+}
+
+@media (max-width: 1000px) {
+  .formation-container .subtitle {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 800px) {
+  .formation-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 30px 20px;
+  }
+  .formation-container .subtitle {
+    font-size: 4rem;
+    color: #ffffff;
+    max-width: 40ch;
+  }
+  .formation-container-description {
+    font-size: 1.25rem;
+  }
+  .formation-courses h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .formation-container .subtitle {
+    font-size: 3rem;
+  }
+  .formation::after {
+    display: none;
+  }
+}

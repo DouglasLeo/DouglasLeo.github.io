@@ -1,0 +1,31 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navigation a {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  padding: 10px 20px;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .navigation a {
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+}
